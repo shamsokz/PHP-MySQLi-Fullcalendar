@@ -1,0 +1,42 @@
+input, textarea {
+	width: 95%;
+    padding: 10px;
+    border: 2px solid #134c8c;
+	margin-bottom:10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #999;
+    background-color: #FFF;
+    font-size: 14px;
+}
+#submit_data {
+	width: 35%;
+    padding: 10px;
+    border: 2px solid #134c8c;
+	margin-bottom:10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #FFF;
+    background-color: #134c8c;
+    font-size: 16px;
+}
+.error {
+	display:none;
+	width:auto;
+	height:auto;
+	color: #ff0000;
+	font-size:14px;
+}
+.success {
+	display:none;
+	padding:5px;
+	width:auto;
+	height:auto;
+	margin:0 0 3px 0;
+	color: #4b5c68;
+	font-size:14px;
+	background-color: #f0fff0;
+	border:1px solid #00ff00;
+}
