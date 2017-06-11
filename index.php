@@ -35,9 +35,9 @@
                 $.colorbox({href:'forms/event-detail.php?event='+calEvent.id,width: "40%"});
               },
               eventDrop: function(event, delta, revertFunc) { // drag and drop event to edit date
-        				edit(event);
-        			},
-        			events: [
+        	edit(event);
+              },
+        	events: [
                 <?php
                 $sql = "SELECT `event_id`, `event_title`, `start_date` FROM `tbl_events`";
                 $res = $conn->query($sql);
@@ -50,32 +50,32 @@
                   id: '<?php echo $event_id; ?>',
                   title: '<?php echo $event_title; ?>',
                   //icon : '', we can display different icons with event title
-        					start: '<?php echo $start_date; ?>',
+        	  start: '<?php echo $start_date; ?>',
                   //color: '', we can use different colors for different events
-        				}, <?php } ?>
-        			]
-        		});
+        	}, <?php } // end php script ?>
+        	]
+            });
             // edit event function
             function edit(event){
-        			start = event.start.format('YYYY-MM-DD HH:mm:ss');
-        			id =  event.id;
-        			Event = [];
-        			Event[0] = id;
-        			Event[1] = start;
-        			$.ajax({
-        			 url: 'edit-event.php', // edit page URL
-        			 type: "POST",
-        			 data: {Event:Event},
-               success: function(result) {
-        					if(result == 'OK'){
-        						// show success message here if you want otherwise leave as it is
-        					} else {
-        						// show error message here if you want otherwise leave as it is
-        					}
-        				}
-        			});
+                start = event.start.format('YYYY-MM-DD HH:mm:ss');
+                id =  event.id;
+        	Event = [];
+        	Event[0] = id;
+        	Event[1] = start;
+        	$.ajax({
+        	url: 'edit-event.php', // edit page URL
+        	type: "POST",
+        	data: {Event:Event},
+                success: function(result) {
+        		if(result == 'OK'){
+        		// show success message here if you want otherwise leave as it is
+        		} else {
+        		// show error message here if you want otherwise leave as it is
         		}
-        	});
-        </script>
+        	}
+        });
+     }
+ });
+</script>
 </body>
 </html>
