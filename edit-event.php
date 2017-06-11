@@ -8,7 +8,7 @@ if (isset($_POST['Event'][0]) && isset($_POST['Event'][1])){
 	if ($res) {
 			die ('OK');
 	} else {
-			die ('Erreur execute');
+			die ('Error');
 	}
 }
 ?>
