@@ -3,13 +3,13 @@ FullCalendar is an Open source JavaScript jQuery plugin which I connected with M
 
 # Final Product Features
 
-1 . Drag and drop events
+1 . Drag and drop events (loaded from MySQL database i.e calendar.sql)
 
-2 . Add event form in a popup window
+2 . Add event form in a colorbox popup window
 
-3 . View event form in a popup window
+3 . View event form in a colorbox popup window
 
-4 . Edit event form in a popup window
+4 . Edit event form in a colorbox popup window
 
 5 . Delete event functionality (Do it yourself)
 
